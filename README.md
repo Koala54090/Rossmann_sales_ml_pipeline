@@ -93,11 +93,11 @@ Evaluation metrics:
 
 This pipeline was explicitly designed to **avoid data leakage**:
 
-✔ Time-based splitting prevents future data access
-✔ Lag features use historical values only
-✔ Rolling features exclude current month
-✔ Imputation and scaling are fit on training data only
-✔ One-hot encoding handles unseen stores safely
+ Time-based splitting prevents future data access
+Lag features use historical values only
+Rolling features exclude current month
+Imputation and scaling are fit on training data only
+One-hot encoding handles unseen stores safely
 
 Minor aggregation choices were made carefully and do not introduce target leakage.
 
